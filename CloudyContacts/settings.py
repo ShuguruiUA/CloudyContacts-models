@@ -38,7 +38,8 @@ ALLOWED_HOSTS = [
     "DJANGO_ALLOWED_HOSTS",
     "127.0.0.1",
     "0.0.0.0",
-    "*.apps.run-on-seenode.com",
+    "web-pzjikg8utavf.up-de-fra1-k8s-1.apps.run-on-seenode.com",
+    "https://web-1e8fltccizxb.up-pl-waw1-k8s-1.apps.run-on-seenode.com",
     "cloudy-contacts-grey-edede0fc.koyeb.app",
     "api.openweathermap.org",
     "ipgeolocation.abstractapi.com",
@@ -56,6 +57,7 @@ ALLOWED_HOSTS = [
 CSRF_TRUSTED_ORIGINS = [
     "https://web-pzjikg8utavf.up-de-fra1-k8s-1.apps.run-on-seenode.com",
     "https://cloudy-contacts-grey-edede0fc.koyeb.app/",
+    "https://web-1e8fltccizxb.up-pl-waw1-k8s-1.apps.run-on-seenode.com/",
 ]
 # CSRF_TRUSTED_ORIGINS = os.getenv(
 #     ""
