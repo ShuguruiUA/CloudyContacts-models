@@ -30,7 +30,7 @@ def sport_news(request):
         return render(
             request,
             "app_news/error.html",
-            {"message": "Could not get response from server."},
+            {"title": news_title, "message": "Could not get response from server."},
         )
 
     soup = BeautifulSoup(response.text, "html.parser")
@@ -77,7 +77,7 @@ def sport_news(request):
     if not sport_news:
         # Return an error message if no sport news found
         return render(
-            request, "app_news/error.html", {"title": news_title, "message": "No sport news found."}
+            request, "app_news/error.html", {"message": "No sport news found."}
         )
 
     # Paginate the news
