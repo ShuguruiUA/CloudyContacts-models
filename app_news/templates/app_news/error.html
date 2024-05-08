@@ -5,7 +5,7 @@
 
 <section id="news_page" class="wrapper style1 fade-up">
     <div class="inner">
-        <h2 id="culture-news">Culture News</h2>
+        <h2 id="culture-news">{{title}} News</h2>
             <div id="culture_news" style="margin: 20px 30px;">
                 {% for news_item in culture_news %}
                 <div class="news-item"
@@ -16,7 +16,7 @@
                         More</a></p>
                 </div>
                 {% empty %}
-                <p>No culture news available</p>
+                <p>No {{title}} news available</p>
                 {% endfor %}
             </div>
 
